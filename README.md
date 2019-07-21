@@ -1,7 +1,7 @@
 # quizapp
 
 Objective: 
-- Build a simple interactive quiz using JavaScript/jQuery
+- Build an interactive, responsive quiz using JavaScript/jQuery
 
 Features: 
 - Score tracking
