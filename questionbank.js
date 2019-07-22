@@ -1,6 +1,6 @@
 //set score and questions to 0
-let scoreCount = 0;
-let questNum = 0
+  let scoreCount = 0;
+  let questNum = 0;
 
 //these are the questions the users will be asked
 const QUESTIONBANK = [ 
@@ -108,8 +108,7 @@ const QUESTIONBANK = [
 
 //generate the HTML to later render in the DOM via generateQuestion function
 function generateQuestion () {
-  if (questNum < QUESTIONBANK.length) {
-    return `
+  return `
     <section role= "question-page">
       <header role = "banner">
           <h2 id="question">${QUESTIONBANK[questNum].question}</h2>
@@ -140,7 +139,6 @@ function generateQuestion () {
         <div>Your score: ${scoreCount}</div>
       </div>
     </section>`
-  };
 }
 
 //click on the start button, hide the start page to make way for first question
